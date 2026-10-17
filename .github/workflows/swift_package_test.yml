@@ -766,7 +766,8 @@ jobs:
       - name: Checkout swiftlang/github-workflows repository
         uses: actions/checkout@v7
         with:
-          repository: swiftlang/github-workflows
+          repository: niktishakov/github-workflows
+          ref: fork-test-android-fail
           path: github-workflows
       - name: Determine script-root path
         id: script_path
