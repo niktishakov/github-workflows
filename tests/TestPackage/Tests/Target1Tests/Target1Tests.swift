@@ -16,3 +16,7 @@ import Testing
 @Test func example() async throws {
   foo()
 }
+
+@Test func failsOnPurpose() {
+  #expect(Bool(false), "fork test: the first runner fails")
+}
